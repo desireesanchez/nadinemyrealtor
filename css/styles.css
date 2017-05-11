@@ -1,22 +1,8 @@
-/* CSS use command fwd slash to comment*/
-
 /*BROWSER RESET*/
 * {
   margin:0;
   padding:0;
   box-sizing: border-box;
-}
-
-/* GRIDLEX RESET */
-
-[class*=col] {
-padding: 0;
-margin: 0;
-}
-
-[class*=grid] {
-padding: 0;
-margin: 0;
 }
 
 /*GENERAL STYLES*/
@@ -34,6 +20,7 @@ h1 {
   text-transform: uppercase;
   font-size: 45px;
   color: white;
+  text-align: right;
 }
 
 h2, h3, h4, h5, h6 {
@@ -60,7 +47,8 @@ button {
 }
 
 input.submit {
-  padding: 7px 20px;
+  /*padding: 7px 20px;*/
+  padding: 15px;
   min-width: 135px;
   border-radius: 2em;
   border: 1px solid rgba(127, 140, 141,1.0);
@@ -68,6 +56,9 @@ input.submit {
   text-transform: uppercase;
   font-size: 14px;
   color: rgb(255, 248, 173);
+  margin: 1em 0;
+  line-height: 1em;
+  transition: .8s ease;
 }
 
 input.submit:hover {
@@ -75,7 +66,7 @@ input.submit:hover {
 }
 
 /*ICONS LINKS*/
-.customer-reviews i {
+.customer-reviews-section i {
     color: rgb(47, 102, 144);
     font-size: 2em;
     padding: 0.2em;
@@ -127,6 +118,7 @@ header .logo {
 /*INTRO TAGLINE*/
 .intro {
   min-height: 50vh;
+  clear: both;
   /*these next 3 properties align it centered horiz and vertic*/
   display:flex;
   align-items: center;
@@ -136,12 +128,44 @@ header .logo {
   font-family: 'Rochester', cursive;
   font-size: 40px;
   text-transform: capitalize;
-  text-align: right;
+  text-align: left;
+  display: inline-block;
+  width: 29rem;
 }
 
-/**** HOME PAGE CONTENT ****/
+                          /**** HOME PAGE CONTENT ****/
+
+/**** HOME PAGE CONTENT - COMMUNITIES & SEARCH BOXES ****/
 .communities-section {
-  padding: 7vh 7vw;
+  height: 400px;
+}
+
+.communities-content {
+  padding: 3rem 5rem;
+}
+
+.search-homes-box {
+  background-color: rgba(189, 195, 199,1.0);
+  padding: 2em 0 0 8em;
+}
+
+.search-homes-box span {
+  color: rgb(47, 102, 144);
+}
+
+.search-homes-box form {
+  margin-top: 1em;
+  width: 70%;
+}
+
+.search-homes-box form label {
+  display: inline-block;
+}
+
+.search-homes-box form input, .search-homes-box form textarea {
+  width: 100%;
+  min-height: 3em;
+  margin: 0.5em 0;
 }
 
 /**** HOME PAGE CONTENT - FEATURED BOXES ****/
@@ -159,6 +183,7 @@ div.featured-content h2, div.featured-content h3 { color: white;}
 
 div.featured-content:hover {
   background-color: rgba(255, 248, 173, 0.5);
+  transition: all 1s;
 }
 div.featured-content:hover h2, div.featured-content:hover h3 { color: rgb(47, 102, 144);}
 
@@ -184,15 +209,34 @@ div.featured-content:hover h2, div.featured-content:hover h3 { color: rgb(47, 10
 }
 
 /*CUSTOMER REVIEWS SECTION*/
-.customer-reviews {
+.customer-reviews-section {
   padding: 7vh 7vw;
   text-align: center;
 }
 
+.customer-reviews-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.customer-image {
+  display: inline-block;
+  float: left;
+  margin: 1em 0;
+}
+
 div.customer-image img {
-  display: inline;
   width: 150px;
   border-radius: 50%;
+}
+
+.customer-reviews-content {
+  display: inline-block;
+  width: 80%;
+  text-align: left;
+  line-height: 1.5em;
+  margin-left: 4em;
 }
 
 /*ABOUT SECTION*/
@@ -200,11 +244,9 @@ section.about {}
 
 /* FOOTER MAIN */
 footer {
-
+  margin-bottom: 8rem;
 }
 
-/* NOTE FROM MANDY
-10px padding all around is causing the strange alignment. you could change it to 0 padding on the left */
 footer nav {
   float: left;
 }
@@ -212,7 +254,7 @@ footer nav {
 footer nav a {
   color: rgb(47, 102, 144);
   display: inline-block;
-  padding: 10px;
+  padding: 10px 15px 10px 0;
   text-align: left;
 }
 
@@ -224,11 +266,11 @@ footer nav a:hover {
 .map-section {
   background-color: rgba(189, 195, 199,1.0);
   width: 100%;
-  padding: 5em 0;
+  padding: 0;
 }
 
 footer .getintouch {
-  padding-left: 10em;
+  padding: 4em 0 4em 10em;
 }
 
 footer span {
@@ -236,7 +278,7 @@ footer span {
 }
 
 footer form {
-  margin: 1em 0;
+  margin-top: 1em;
   width: 70%;
 }
 
@@ -246,7 +288,7 @@ footer form label {
 
 footer form input, footer form textarea {
   width: 100%;
-  min-height: 2em;
+  min-height: 3em;
   margin: 0.5em 0;
 }
 
@@ -257,7 +299,7 @@ footer form input, footer form textarea {
 }
 
 nav.footer-menu {
-  margin: 3em 0;
+  margin: 1em 0;
 }
 .newsletter-signup-section {
   padding-left: 6%;
@@ -288,18 +330,26 @@ form.newsletter-signup {
   display: flex;
   align-items: center;
   justify-content: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 12px 20%;
 }
 
 .footer-fixed a {
-  font-size: 25px;
+  font-size: 20px;
 }
 
 .footer-fixed a.button {
   color: rgb(255, 248, 173);
   background-color: rgb(47, 102, 144);
   border: 1px solid rgb(47, 102, 144);
-  border-radius: 10px;
+  border-radius: 2em;
+  display: inline-block;
+  margin: 0.5em 0;
   padding: 15px;
+  line-height: 1em;
+  transition: .8s ease;
 }
 
 .footer-fixed a.button:hover {
@@ -309,9 +359,9 @@ form.newsletter-signup {
 }
 
 .footer-fixed img {
-  width: 7%;
+  width: 9%;
   border-radius: 50%;
-  margin: 1em 2em;
+  margin: 0 2em;
 }
 
 .footer-fixed i {
