@@ -1,0 +1,129 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>{{page.title}}</title>
+  <meta name="description" content="{{page.metadesc}}"/>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.3.1/gridlex.min.css">
+  <script src="https://use.fontawesome.com/a9f7b676b3.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Comfortaa|Raleway:300|Rochester" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/styles.css" />
+</head>
+<body>
+  <section class="header-banner" style="background-image: url('{{page.header-image}}');">
+    <div class="grey-transparency">
+    <!--header-->
+    <header>
+      <div class="logo">Nadine MyRealtor</div>
+      <nav>
+        <a href="">HOME</a>
+        <a href="">ABOUT</a>
+        <a href="">BUY A HOME</a>
+        <a href="">SELL YOUR HOME</a>
+        <a href="">SEARCH PROPERTIES</a>
+        <a href="">COMMUNITIES</a>
+        <a href="">CONTACT</a>
+      </nav>
+    </header>
+    <!--Intro-->
+    <section class="intro">
+        <h1>
+            Rancho Cucamonga Real Estate
+          <div class="intro-tagline">Make Nadine MyRealtor, Yours.</div>
+        </h1>
+    </section>
+    </div>
+  </section> <!-- end top-banner -->
+
+  {{content}}
+
+  <!-- Footer Section -->
+  <footer>
+    <!-- map and contact form section -->
+    <section class="grid map-section">
+      <!-- Map -->
+      <div class="col-6">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d105691.84257785813!2d-117.62787875078354!3d34.12407563037338!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c35bf938112791%3A0xad6a7aad82f2f34b!2sRancho+Cucamonga%2C+CA%2C+USA!5e0!3m2!1sen!2sid!4v1494213362331" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+      </div>
+
+      <!-- Contact -->
+      <div class="col-6 getintouch">
+        <h2>Get in Touch</h2>
+        <p>
+          <span>Office:</span> 8381 Juniper Ave. #200, Fontana, CA 92336
+        </p>
+        <p>
+          <span>Phone:</span> (909) 244-4512
+        </p>
+        <form>
+          <label for="name">Your Name</label>
+          <input name="name" />
+          <label for="email">Your Email</label>
+          <input name="email" />
+          <label for="phone">Your Phone Number</label>
+          <input name="phone" />
+          <label for="comment">Your message to Nadine</label>
+          <textarea name="comment"></textarea>
+          <input name="submit" type="submit" class="submit"/>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer Grid -->
+    <section class="grid footer-menu-section">
+      <div class="col-7"> <!--Start left column footer -->
+        <h3>Nadine myRealtor</h3>
+        <p>
+          Licensed real estate agent: CalBRE #01913587
+        </p>
+
+        <!-- footer menu -->
+        <nav class="footer-menu">
+          <a href="">Home</a>
+          <a href="">About</a>
+          <a href="">Buy</a>
+          <a href="">Sell</a>
+          <a href="">Search Homes</a>
+          <a href="">Communities</a>
+          <a href="">Contact</a>
+          </ul>
+        </nav>
+
+        <div style="clear:both;">
+          <!-- legal section-->
+          <p>
+            Copyright (c) 2017 Nadine MyRealtor All Rights Reserved.
+          </p>
+          <p>
+            <span>Location:</span> 8381 Juniper Ave. #200, Fontana, CA 92336
+          </p>
+        </div>
+      </div><!--end left column footer -->
+
+      <div class="col-5 newsletter-signup-section"><!-- Newsletter signup-->
+        <h3>Keep in Touch</h3>
+
+        <form class="newsletter-signup">
+          <label for="email">Newsletter Signup</label>
+          <input name="email" />
+          <input name="submit" type="submit" class="submit"/>
+        </form>
+
+        <!-- Social Media-->
+        <div class="social-media-icons">
+          <a href="https://www.facebook.com/NadineNikole" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+          <a href="https://www.instagram.com/nadinenikolee/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+          <a href="https://www.linkedin.com/in/nadine-sanchez-7023915/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+        </div>
+      </div><!-- End Newsletter signup-->
+    </section>
+  </footer> <!-- End Footer Grid -->
+
+  <!-- Fixed Footer Menu -->
+  <div class="footer-fixed">
+    <a href="#" class="button">CONTACT</a>
+    <img src="/images/nadine-sanchez-real-estate-agent-square.jpg"/>
+    <a href"#" style="border:none;"><i class="fa fa-mobile" aria-hidden="true"></i> 888-888-8888</a>
+  </div>
+</body>
+</html>
