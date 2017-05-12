@@ -311,7 +311,7 @@ footer nav a:hover {
 .map-section {
   background-color: rgba(189, 195, 199,1.0);
   padding: 0;
-  /*border-top: style="border: 1px solid gray;"*/
+  border-top: border: 1px solid gray;
 }
 
 footer .getintouch {
