@@ -5,6 +5,12 @@
   box-sizing: border-box;
 }
 
+/*helper classes*/
+.rel {
+  position: relative;
+}
+
+
 /*GENERAL STYLES*/
 .button {}
 .button:hover{}
@@ -209,6 +215,22 @@ div.featured-content:hover h2, div.featured-content:hover h3 { color: rgb(47, 10
 }
 
 /*CUSTOMER REVIEWS SECTION*/
+svg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  fill: rgb(255, 248, 173);
+}
+
+.customer-home-image {
+  align-items: center;
+  justify-content: center;
+}
+.customer-home-image img {
+  background-size: cover;
+  background-position: center;
+}
+
 .customer-reviews-section {
   padding: 7vh 7vw;
   text-align: center;
@@ -222,7 +244,6 @@ div.featured-content:hover h2, div.featured-content:hover h3 { color: rgb(47, 10
 
 .customer-image {
   display: inline-block;
-  float: left;
   margin: 1em 0;
 }
 
@@ -232,12 +253,23 @@ div.customer-image img {
 }
 
 .customer-reviews-content {
+  text-align: center;
+  line-height: 1.0em;
+  background-color: rgb(255, 248, 173);
+  /*margin-left: 4em;*/
+}
+
+.customer-reviews-content p {
+    padding: 0 2rem;
+}
+
+/*.customer-reviews-content {
   display: inline-block;
   width: 80%;
   text-align: left;
   line-height: 1.5em;
   margin-left: 4em;
-}
+}*/
 
 /*ABOUT SECTION*/
 section.about {}
