@@ -5,11 +5,14 @@
   box-sizing: border-box;
 }
 
-/*helper classes*/
+/*helper classes so far for svg*/
 .rel {
   position: relative;
 }
 
+.left-svg {
+  left:0;
+}
 
 /*GENERAL STYLES*/
 .button {}
@@ -215,6 +218,16 @@ div.featured-content:hover h2, div.featured-content:hover h3 { color: rgb(47, 10
 }
 
 /*CUSTOMER REVIEWS SECTION*/
+.customer-benefits {
+  margin-top: 3%;
+  line-height: 1em;
+  text-transform: uppercase;
+}
+
+.customer-benefits i {
+  margin-right: .5em;
+}
+
 svg {
   position: absolute;
   top: 0;
@@ -228,11 +241,10 @@ svg {
 }
 .customer-home-image img {
   background-size: cover;
-  background-position: center;
 }
 
 .customer-reviews-section {
-  padding: 7vh 7vw;
+  padding: 7vh 0;
   text-align: center;
 }
 
@@ -254,13 +266,14 @@ div.customer-image img {
 
 .customer-reviews-content {
   text-align: center;
-  line-height: 1.0em;
+  line-height: 1.5em;
   background-color: rgb(255, 248, 173);
   /*margin-left: 4em;*/
 }
 
 .customer-reviews-content p {
-    padding: 0 2rem;
+    padding: 0 3rem;
+    text-align: left;
 }
 
 /*.customer-reviews-content {
@@ -297,8 +310,8 @@ footer nav a:hover {
 /* FOOTER MID SECTION*/
 .map-section {
   background-color: rgba(189, 195, 199,1.0);
-  width: 100%;
   padding: 0;
+  /*border-top: style="border: 1px solid gray;"*/
 }
 
 footer .getintouch {
