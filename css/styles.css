@@ -45,6 +45,10 @@ p, form, a {
   font-size: 16px;
 }
 
+p {
+  line-height: 2em;
+}
+
 a {
   text-decoration: none;
   color: rgb(47, 102, 144);
@@ -151,6 +155,7 @@ header .logo {
 
 .communities-content {
   padding: 3rem 5rem;
+  /*line-height: 2rem;*/
 }
 
 .search-homes-box {
@@ -220,7 +225,7 @@ div.featured-content:hover h2, div.featured-content:hover h3 { color: rgb(47, 10
 /*CUSTOMER REVIEWS SECTION*/
 .customer-benefits {
   margin-top: 3%;
-  line-height: 1em;
+  /*line-height: 1em;*/
   text-transform: uppercase;
 }
 
@@ -266,7 +271,7 @@ div.customer-image img {
 
 .customer-reviews-content {
   text-align: center;
-  line-height: 1.5em;
+  /*line-height: 1.5em;*/
   background-color: rgb(255, 248, 173);
   /*margin-left: 4em;*/
 }
@@ -276,20 +281,21 @@ div.customer-image img {
     text-align: left;
 }
 
-/*.customer-reviews-content {
-  display: inline-block;
-  width: 80%;
-  text-align: left;
-  line-height: 1.5em;
-  margin-left: 4em;
-}*/
-
-/*ABOUT SECTION*/
-section.about {}
+/*WHY NADINE SECTION*/
+.why-nadine-section {
+  padding: 4vh 0;
+  text-align: center;
+}
+.why-nadine-content {
+  /*line-height: 2em;*/
+  text-transform: uppercase;
+  margin: 3rem auto 0 auto;
+  width: 65%;
+}
 
 /* FOOTER MAIN */
 footer {
-  margin-bottom: 8rem;
+  margin: 7rem 0;
 }
 
 footer nav {
@@ -311,7 +317,6 @@ footer nav a:hover {
 .map-section {
   background-color: rgba(189, 195, 199,1.0);
   padding: 0;
-  border-top: border: 1px solid gray;
 }
 
 footer .getintouch {
