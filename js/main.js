@@ -6,4 +6,9 @@ $(document).ready(function(){
      typeSpeed: 50,
      showCursor: false
    });
+
 });
+
+function formCollapse () {
+  $('.search-homes-box').slideUp();
+}

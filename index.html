@@ -20,20 +20,27 @@ header-image: /images/los-angeles-california.jpg
     </div>
 
     <!--MLS Search Box -->
-    <div class="col-5 search-homes-box">
-      <h3>Find a Property</h3>
-      <form>
-        <label for="price">Max Price</label>
-        <input name="price" />
-        <label for="bedrooms">Min Beds</label>
-        <input name="bedrooms" />
-        <label for="bathrooms">Min Baths</label>
-        <input name="bathrooms" />
-        <label for="city">City</label>
-        <input name="city" />
-        <input name="submit" type="submit" class="submit" value="Search"/>
-      </form>
-    </div>
+    <div class="col-4 rel" style="height: 100%;">
+      <div class="search-homes-box">
+        <h3>Find a Property</h3>
+        <i class="fa fa-arrow-circle-o-down" aria-hidden="true" onclick="formCollapse();"></i>
+        <form>
+          <label for="price">Max Price</label>
+          <input name="price" />
+          <label for="bedrooms">Min Beds</label>
+          <input name="bedrooms" />
+          <label for="bathrooms">Min Baths</label>
+          <input name="bathrooms" />
+          <label for="city">City</label>
+          <input name="city" />
+          <input name="submit" type="submit" class="submit" value="Search"/>
+        </form>
+      </div>
+      <div class="form-collapse">
+        <h3>Find a Property</h3>
+        <i class="fa fa-arrow-circle-o-up" aria-hidden="true" onclick="formCollapse();"></i>
+      </div>
+     </div>
   </section>
 
   <!-- Featured Homes & Svcs Section -->
