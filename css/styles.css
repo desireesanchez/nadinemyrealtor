@@ -5,6 +5,10 @@
   box-sizing: border-box;
 }
 
+[class*=grid]{
+  margin: 0;
+}
+
 /*helper classes so far for svg*/
 .rel {
   position: relative;
@@ -92,10 +96,19 @@ img {
 
 /*HEADER*/
 header {
-  padding: 5vh 5vw;
+  padding: 0 0;
 }
 
 /********* START Hamburger menu ***********/
+.nav-grid {
+  background-color: rgba(0,0,0,0.3);
+  height:3.8em;
+  position:fixed;
+  width:100%;
+  padding: 1.3em 0 0 4em;
+  z-index: 3;
+}
+
 nav ul{
   margin: 20px 0 0 0;
   padding:0;
@@ -104,7 +117,7 @@ nav ul{
 /* this is where you style the button if you want to add more space between the spans than add padding to this div but make sure you also add it to the top and bottom active classes on there top/bottom or else your cross wont line up*/
 .burger-button {
   position:fixed;
-  top: 2vh;
+  /*top: 2vh;*/
   right: 2vh;
   z-index: 9999999999;
   cursor: s-resize;
@@ -117,8 +130,8 @@ nav ul{
 
 .menu-button {
   position:fixed;
-  top: 1.0vh;
-  right: 4.5vw;
+  top: 2vh;
+  right: 5vw;
   z-index: 9999999999;
   padding: 8px;
   color: rgb(255, 248, 173);
@@ -235,6 +248,7 @@ header .logo {
   float: left;
   color: rgb(255, 248, 173);
   font-size: 20px;
+
 }
 .header-banner {
   background-size: cover;
@@ -282,7 +296,7 @@ header .logo {
   position: absolute;
   bottom: 0;
   height: 100%;
-  z-index: 2;
+  z-index: 1;
 }
 
 .search-homes-box span {
@@ -535,7 +549,7 @@ form.newsletter-signup {
   bottom: 0;
   width: 100%;
   padding: 12px 20%;
-  z-index: 9;
+  z-index: 1;
 }
 
 .footer-fixed a {
