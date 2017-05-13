@@ -95,7 +95,123 @@ header {
   padding: 5vh 5vw;
 }
 
-nav {
+/********* START Hamburger menu ***********/
+nav ul{
+  margin: 20px 0 0 0;
+  padding:0;
+}
+
+/* this is where you style the button if you want to add more space between the spans than add padding to this div but make sure you also add it to the top and bottom active classes on there top/bottom or else your cross wont line up*/
+.burger-button {
+  position:fixed;
+  top: 2vh;
+  right: 2vh;
+  z-index: 9999999999;
+  cursor: s-resize;
+  padding: 8px;
+}
+
+.burger-button.active{
+  cursor: n-resize;
+}
+
+.menu-button {
+  position:fixed;
+  top: 1.0vh;
+  right: 4.5vw;
+  z-index: 9999999999;
+  padding: 8px;
+  color: rgb(255, 248, 173);
+}
+.active .menu-hide {
+  opacity:0;
+}
+
+.burger-button.menu-button span {
+  border: none;
+  border-radius: 0;
+}
+
+/*this is where you can change the color of the buttons*/
+.burger-button span{
+  width: 25px;
+  border: 2px solid rgb(255, 248, 173);
+  display: block;
+  border-radius: 22px;
+  transition: 2s;
+}
+.burger-button.active span{
+  border-color: rgb(255, 248, 173);
+}
+
+.burger-top, .burger-bottom{
+  position: absolute;
+}
+
+.burger-top{
+  top: 02px;
+}
+
+.burger-bottom{
+  bottom: 02px;
+}
+/* make sure this has the same top as the burger button has padding*/
+.burger-button.active .burger-top{
+  position: absolute;
+  top: 8px;
+  transform: rotateZ(45deg);
+}
+
+.burger-button.active .burger-middle{
+  transform: rotateZ(180deg);
+  border-color: rgba(0,0,0,0);
+}
+
+/* make sure this has the same bottom as the burger button has padding*/
+.burger-button.active .burger-bottom{
+  position: absolute;
+  bottom: 8px;
+  transform: rotateZ(-45deg);
+}
+
+.burger-menu {
+    display: none;
+    position: fixed;
+    top: 0;
+    left:0;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(47, 102, 144);
+    padding-top:20px;
+    box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.1);
+    z-index: 99999999;
+}
+
+.burger-menu a {
+  text-decoration: none;
+  padding: 15px 0px;
+  font-size: 40px;
+  font-weight: 300;
+  color: white;
+  font-family: 'Alegreya Sans SC', sans-serif;
+  display:block;
+  text-align:center;
+  white-space:nowrap;
+}
+
+.burger-menu a:hover {
+  color: rgb(47, 102, 144);
+  background-color: rgb(255, 248, 173);
+}
+
+.burger-menu li{list-style:none}
+/*
+.dropdown-nav:hover .dropdown-content {
+    display: block;
+} */
+/********* END Hamburger menu ***********/
+
+/*nav {
   float: right;
 }
 
@@ -109,10 +225,11 @@ nav a {
 
 nav a:hover {
   border-bottom: 1px solid rgb(255, 248, 173);
-}
+}*/
 
 /*HEADER BANNER SECTION*/
 header .logo {
+  position: fixed;
   font-family: 'Rochester', cursive;
   display: inline-block;
   float: left;
@@ -418,6 +535,7 @@ form.newsletter-signup {
   bottom: 0;
   width: 100%;
   padding: 12px 20%;
+  z-index: 9;
 }
 
 .footer-fixed a {
