@@ -20,3 +20,7 @@ $(document).ready(function(){
 function formCollapse () {
   $('.search-homes-box').slideUp();
 }
+
+function formOpen () {
+  $('.search-homes-box').slideDown();
+}
