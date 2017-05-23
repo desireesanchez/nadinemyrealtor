@@ -599,7 +599,7 @@ form.newsletter-signup {
 
 
 /************ RESPONSIVE ADJUSTS ****************/
-.col-6 {max-width: 50%;}
+/*.col-6 {max-width: 50%;}
 .col-4 {max-width: 33.33%;}
 
 @media (max-width: 800px) {
@@ -608,4 +608,4 @@ form.newsletter-signup {
     max-width: 100%;
     margin: 0;
   }
-}
+}*/
