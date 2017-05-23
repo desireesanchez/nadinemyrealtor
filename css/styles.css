@@ -33,7 +33,7 @@ h1 {
   text-transform: uppercase;
   font-size: 45px;
   color: white;
-  text-align: right;
+  text-align: center;
 }
 
 h2, h3, h4, h5, h6 {
@@ -131,7 +131,7 @@ nav ul{
 .menu-button {
   position:fixed;
   top: 2vh;
-  right: 5vw;
+  right: 12vh;
   z-index: 9999999999;
   padding: 8px;
   color: rgb(255, 248, 173);
@@ -195,7 +195,7 @@ nav ul{
     right: 0;
     bottom: 0;
     background-color: rgb(47, 102, 144);
-    padding-top:20px;
+    padding-top: 2rem;
     box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.1);
     z-index: 99999999;
 }
@@ -281,7 +281,7 @@ header .logo {
 
 /**** HOME PAGE CONTENT - COMMUNITIES & SEARCH BOXES ****/
 .communities-section {
-  height: 400px;
+  height: 27rem;
 }
 
 .communities-content {
@@ -350,21 +350,27 @@ header .logo {
 /**** HOME PAGE CONTENT - FEATURED BOXES ****/
 .featured-boxes div {
   background-size: cover;
-  height: 350px;
+  height: 33rem;
 }
 
 div.featured-content {
   background-color: rgba(0, 0, 0, 0.2);
   text-align: center;
-  padding-top: 11.2em;
+  padding-top: 16rem;
 }
-div.featured-content h2, div.featured-content h3 { color: white;}
+div.featured-content h2, div.featured-content h3 {
+  color: white;
+  text-shadow: 0 0 2px black;
+}
 
 div.featured-content:hover {
   background-color: rgba(255, 248, 173, 0.5);
   transition: all 1s;
 }
-div.featured-content:hover h2, div.featured-content:hover h3 { color: rgb(47, 102, 144);}
+div.featured-content:hover h2, div.featured-content:hover h3 {
+  color: rgb(47, 102, 144);
+  text-shadow: 0 0 2px white;
+}
 
 .featured-homebox-1 {
   background-image: url("../images/featured-rancho-real-estate.jpeg");
@@ -476,6 +482,9 @@ footer nav a {
 
 footer nav a:hover {
   border-bottom: 1px solid rgb(255, 248, 173);
+  padding-right: 0;
+  margin-right: 15px;
+  border-bottom-width: 4px;
 }
 
 /* FOOTER MID SECTION*/
@@ -485,7 +494,7 @@ footer nav a:hover {
 }
 
 footer .getintouch {
-  padding: 4em 0 4em 10em;
+  padding: 4rem 8rem;
 }
 
 footer span {
@@ -494,7 +503,7 @@ footer span {
 
 footer form {
   margin-top: 1em;
-  width: 70%;
+
 }
 
 footer form label {
@@ -536,6 +545,7 @@ form.newsletter-signup {
 
 .social-media-icons i:hover {
   color: rgb(255, 248, 173);
+  text-shadow: 0 0 2px black;
 }
 
 /*FOOTER FIXED*/
@@ -553,7 +563,8 @@ form.newsletter-signup {
 }
 
 .footer-fixed a {
-  font-size: 20px;
+  font-size: 95%;
+
 }
 
 .footer-fixed a.button {
@@ -563,7 +574,7 @@ form.newsletter-signup {
   border-radius: 2em;
   display: inline-block;
   margin: 0.5em 0;
-  padding: 15px;
+  padding: 1.5% 4%;
   line-height: 1em;
   transition: .8s ease;
 }
@@ -575,12 +586,26 @@ form.newsletter-signup {
 }
 
 .footer-fixed img {
-  width: 9%;
+  width: 8%;
   border-radius: 50%;
-  margin: 0 2em;
+  margin: 0 3%;
 }
 
 .footer-fixed i {
   font-size: 2em;
   color: rgb(47, 102, 144);
+}
+
+
+
+/************ RESPONSIVE ADJUSTS ****************/
+.col-6 {max-width: 50%;}
+.col-4 {max-width: 33.33%;}
+
+@media (max-width: 800px) {
+	.stackable .col- {
+    display: block;
+    max-width: 100%;
+    margin: 0;
+  }
 }
