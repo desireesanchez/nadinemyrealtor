@@ -25,6 +25,7 @@
 /*BODY*/
 body {
   font-family: 'Raleway', sans-serif; /* p */
+  font-size: 16px;
 }
 
 /*HEADINGS*/
@@ -40,17 +41,17 @@ h2, h3, h4, h5, h6 {
   font-family: 'Comfortaa', cursive;
   text-transform: uppercase;
   color: rgb(47, 102, 144);
+  margin-bottom: 0.5em;
 }
 
 /*PARAGRAPHS and LINKS*/
 p, form, a {
   font-family: 'Raleway', sans-serif; /* p */
   color: rgba(127, 140, 141,1.0);
-  font-size: 16px;
 }
 
 p {
-  line-height: 2em;
+  line-height: 1.5em;
 }
 
 a {
@@ -64,7 +65,6 @@ button {
 }
 
 input.submit {
-  /*padding: 7px 20px;*/
   padding: 15px;
   min-width: 135px;
   border-radius: 2em;
@@ -84,9 +84,9 @@ input.submit:hover {
 
 /*ICONS LINKS*/
 .customer-reviews-section i {
-    color: rgb(47, 102, 144);
-    font-size: 2em;
-    padding: 0.2em;
+  color: rgb(47, 102, 144);
+  font-size: 2em;
+  padding: 0.2em;
 }
 
 /*Images*/
@@ -224,22 +224,6 @@ nav ul{
 } */
 /********* END Hamburger menu ***********/
 
-/*nav {
-  float: right;
-}
-
-nav a {
-  color: rgb(255, 248, 173);
-  text-decoration: none;
-  padding: 10px;
-  text-align: center;
-  font-size: 14px;
-}
-
-nav a:hover {
-  border-bottom: 1px solid rgb(255, 248, 173);
-}*/
-
 /*HEADER BANNER SECTION*/
 header .logo {
   position: fixed;
@@ -248,7 +232,6 @@ header .logo {
   float: left;
   color: rgb(255, 248, 173);
   font-size: 20px;
-
 }
 .header-banner {
   background-size: cover;
@@ -286,7 +269,6 @@ header .logo {
 
 .communities-content {
   padding: 3rem 5rem;
-  /*line-height: 2rem;*/
 }
 
 .search-homes-box {
@@ -396,7 +378,6 @@ div.featured-content:hover h2, div.featured-content:hover h3 {
 /*CUSTOMER REVIEWS SECTION*/
 .customer-benefits {
   margin-top: 3%;
-  /*line-height: 1em;*/
   text-transform: uppercase;
 }
 
@@ -442,14 +423,13 @@ div.customer-image img {
 
 .customer-reviews-content {
   text-align: center;
-  /*line-height: 1.5em;*/
   background-color: rgb(255, 248, 173);
-  /*margin-left: 4em;*/
 }
 
 .customer-reviews-content p {
     padding: 0 3rem;
     text-align: left;
+    padding-bottom: 2%;
 }
 
 /*WHY NADINE SECTION*/
@@ -458,7 +438,6 @@ div.customer-image img {
   text-align: center;
 }
 .why-nadine-content {
-  /*line-height: 2em;*/
   text-transform: uppercase;
   margin: 3rem auto 0 auto;
   width: 65%;
@@ -599,13 +578,22 @@ form.newsletter-signup {
 
 
 /************ RESPONSIVE ADJUSTS ****************/
-/*.col-6 {max-width: 50%;}
-.col-4 {max-width: 33.33%;}
-
-@media (max-width: 800px) {
-	.stackable .col- {
-    display: block;
-    max-width: 100%;
-    margin: 0;
+@media (max-width: 724px) {
+  body {
+    font-size: 1.5em;
   }
-}*/
+
+  div.menu-button {
+    display: none;
+  }
+
+  section.header-banner, section.intro {
+    min-height: 35vh;
+  }
+}
+
+@media (max-width: 1118px) {
+  div.col-7.rel.customer-home-image {
+    display: none;
+  }
+}
