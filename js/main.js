@@ -10,7 +10,7 @@ $(document).ready(function(){
 
    //typed tagline
    $(".typing").typed({
-     strings: ["Make Nadine MyRealtor, Yours."],
+     strings: ["{{page.mytagline}}"],
      typeSpeed: 50,
      showCursor: false
    });
