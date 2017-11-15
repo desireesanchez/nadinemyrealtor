@@ -462,12 +462,12 @@ div.customer-image img {
 
 /*WHY NADINE SECTION*/
 .why-nadine-section {
-  padding: 4vh 0;
+  padding: 7vh 0 0 0;
   text-align: center;
 }
 .why-nadine-content {
   text-transform: uppercase;
-  margin: 3rem auto 0 auto;
+  margin: 3rem auto;
   width: 65%;
 }
 
@@ -507,8 +507,75 @@ div.customer-image img {
   text-transform: uppercase;
 }
 
-.social-impact {
+div.social-content {
+  padding: 3rem 5rem 2rem 5rem;
+}
+
+.social-impact div {
+  background-size: cover;
+  height: 22rem;
+}
+
+div.social-impact-content {
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 8rem 2.5rem;
   text-align: center;
+}
+
+div.social-impact-content p {
+  color: white;
+  text-shadow: 0 0 2px black;
+  font-size: 1.5em;
+}
+
+.social-impact-box1 {
+  background-image: url('../images/nadine-charity-1.jpg');
+  background-position: bottom;
+}
+.social-impact-box2 {
+  background-image: url('../images/nadine-charity-2.jpg');
+  background-position: center;
+}
+.social-impact-box3 {
+  background-image: url('../images/nadine-charity-3.jpg');
+  background-position: top;
+}
+
+/* INTERNAL PAGE CUSTOMER REVIEWS */
+
+.customer-impact div {
+  background-size: cover;
+  height: 20rem;
+}
+div.customer-impact-content {
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 1rem 2.5rem;
+  text-align: center;
+}
+div.customer-impact-content p {
+  color: white;
+  text-shadow: 0 0 2px black;
+  font-size: 1em;
+}
+div.customer-impact-content blockquote {
+  text-align: justify;
+  color: white;
+  text-shadow: 0 0 2px black;
+  font-size: 1em;
+}
+div.customer-impact-content img {
+  width: 30%;
+  border-radius: 50%;
+  margin:0;
+}
+.customer-impact-box1 {
+  background-image: url('../images/for-sale-rancho-cucamonga-real-estate.jpeg');
+}
+.customer-impact-box2 {
+  background-image: url('../images/for-sale-rancho-cucamonga-real-estate.jpeg');
+}
+.customer-impact-box3 {
+  background-image: url('../images/for-sale-rancho-cucamonga-real-estate.jpeg');
 }
 
 /* FOOTER MAIN */
