@@ -10,7 +10,14 @@ $(document).ready(function(){
 
    //typed tagline
    $(".typing").typed({
-     strings: ["{{page.mytagline}}"],
+     strings: ["Make Nadine MyRealtor, Yours. is in main.js"],
+     typeSpeed: 50,
+     showCursor: false
+   });
+
+   //typed tagline for individual page intro section
+   $(".typing-homebuyers").typed({
+     strings: ["main text"],
      typeSpeed: 50,
      showCursor: false
    });

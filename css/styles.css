@@ -61,7 +61,7 @@ h1 {
   text-align: center;
 }
 
-h2, h3, h4, h5, h6 {
+h2, h3, h4, h5, h6, p.subheading-style {
   font-family: 'Comfortaa', cursive;
   font-weight: 300;
   text-transform: uppercase;
@@ -70,7 +70,7 @@ h2, h3, h4, h5, h6 {
 }
 
 /*PARAGRAPHS and LINKS*/
-p, form, a {
+p, form, a, ul.textlist {
   font-family: 'Raleway', sans-serif; /* p */
   color: rgba(127, 140, 141,1.0);
 }
@@ -83,6 +83,11 @@ p {
 a {
   text-decoration: none;
   color: rgb(47, 102, 144);
+}
+
+ul.textlist {
+  margin: 1rem 2rem;
+  line-height: 1.5em;
 }
 
 /*BUTTONS*/
@@ -288,6 +293,10 @@ header .logo {
   width: 29rem;
 }
 
+section.text-only-content, div.text-only-content {
+  padding: 5rem 9rem;
+}
+
                           /**** HOME PAGE CONTENT ****/
 
 /**** HOME PAGE CONTENT - COMMUNITIES & SEARCH BOXES ****/
@@ -366,7 +375,8 @@ header .logo {
 div.featured-content {
   background-color: rgba(0, 0, 0, 0.2);
   text-align: center;
-  padding-top: 16rem;
+  /*padding-top: 16rem;*/
+  padding: 16rem 3rem 0 3rem;
 }
 div.featured-content h2, div.featured-content h3 {
   color: white;
@@ -505,10 +515,6 @@ div.customer-image img {
   width: 45%;
   margin: 0 auto 0 auto;
   text-transform: uppercase;
-}
-
-div.social-content {
-  padding: 3rem 5rem 2rem 5rem;
 }
 
 .social-impact div {
