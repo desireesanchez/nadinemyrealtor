@@ -45,6 +45,14 @@
   max-width: 60%;
 }
 
+blockquote {
+  text-align: center;
+  font-style: italic;
+  font-size: 1rem;
+  line-height: 2rem;
+  color: rgb(47, 102, 144);
+}
+
 /*BODY*/
 body {
   font-family: 'Raleway', sans-serif; /* p */
@@ -86,7 +94,7 @@ a {
 }
 
 ul.textlist {
-  margin: 1rem 2rem;
+  margin: 1rem 3rem;
   line-height: 1.5em;
 }
 
@@ -546,6 +554,14 @@ div.social-impact-content p {
   background-image: url('../images/nadine-charity-3.jpg');
   background-position: top;
 }
+
+/**** BUYERS PAGE CONTENT ****/
+.featured-side-bar {
+  background-image: url("../images/preapproved-mortgage.jpg"); background-position: center;
+  background-size: cover;
+  height: 45rem;
+}
+
 
 /* INTERNAL PAGE CUSTOMER REVIEWS */
 
