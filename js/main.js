@@ -10,7 +10,7 @@ $(document).ready(function(){
 
    //typed tagline
    $(".typing").typed({
-     strings: ["Make Nadine MyRealtor, Yours. is in main.js"],
+     strings: ["We Promise Honest Guidance"],
      typeSpeed: 50,
      showCursor: false
    });
