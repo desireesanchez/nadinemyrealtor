@@ -600,6 +600,30 @@ div.customer-impact-content img {
   background-image: url('../images/for-sale-rancho-cucamonga-real-estate.jpeg');
 }
 
+
+/**** WHAT WE DO PAGE CONTENT - FEATURED MKTG BOXES ****/
+.featured-mktg-boxes div {
+  background-size: cover;
+  height: 23rem;
+}
+.featured-mktg-box-1 {
+  background-image: url("../images/for-sale-rancho-cucamonga-real-estate.jpeg");
+  background-position: center;
+}
+.featured-mktg-box-2 {
+  background-image: url("../images/buy-home-rancho-cucamonga.jpeg");
+  background-position: center;
+}
+.featured-mktg-box-3 {
+  background-image: url("../images/for-sale-rancho-cucamonga-real-estate.jpeg");
+  background-position: center;
+}
+.featured-mktg-box-4 {
+  background-image: url("../images/buy-home-rancho-cucamonga.jpeg");
+  background-position: center;
+}
+
+
 /* FOOTER MAIN */
 footer {
   margin: 7rem 0;
