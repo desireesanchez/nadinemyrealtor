@@ -606,6 +606,27 @@ div.customer-impact-content img {
   background-size: cover;
   height: 23rem;
 }
+
+div.featured-mktg-content {
+  background-color: rgba(0, 0, 0, 0.2);
+  text-align: center;
+  /*padding-top: 16rem;*/
+  padding: 3rem 3rem 0 3rem;
+}
+div.featured-mktg-content h2, div.featured-mktg-content h3 {
+  color: white;
+  text-shadow: 0 0 2px black;
+}
+
+div.featured-mktg-content:hover {
+  background-color: rgba(255, 248, 173, 0.5);
+  transition: all 1s;
+}
+div.featured-mktg-content:hover h2, div.featured-mktg-content:hover h3 {
+  color: rgb(47, 102, 144);
+  text-shadow: 0 0 2px white;
+}
+
 .featured-mktg-box-1 {
   background-image: url("../images/for-sale-rancho-cucamonga-real-estate.jpeg");
   background-position: center;
