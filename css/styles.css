@@ -621,7 +621,8 @@ div.customer-impact-content img {
 	transition: 0.6s;
 	transform-style: preserve-3d;
 
-	position: relative;
+	/*position: relative;*/
+  position: absolute;
 }
 
 /* hide back of pane during swap */
