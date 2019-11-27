@@ -638,11 +638,13 @@ div.customer-impact-content img {
 	z-index: 2;
 	/* for firefox 31 */
 	transform: rotateY(0deg);
+  width: -webkit-fill-available;
 }
 
 /* back, initially hidden pane */
 .back {
 	transform: rotateY(180deg);
+  width: -webkit-fill-available;
 }
 /* END entire flip container for featured boxes, keeps perspective */
 
