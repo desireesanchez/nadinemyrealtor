@@ -646,6 +646,7 @@ div.customer-impact-content img {
   transform: rotateY(180deg);
   width: -webkit-fill-available;
 }
+
 /* END entire flip container for featured boxes, keeps perspective */
 
 .featured-mktg-boxes div {
