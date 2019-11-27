@@ -612,8 +612,8 @@ div.customer-impact-content img {
 	}
 
 .flip-container, .front, .back {
-	width: auto;
-	height: auto;
+	width: 50%;
+	height: 50%;
 }
 
 /* flip speed goes here */
