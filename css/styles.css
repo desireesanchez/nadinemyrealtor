@@ -665,16 +665,6 @@ div.featured-mktg-content h2, div.featured-mktg-content h3 {
   text-shadow: 0 0 2px black;
 }
 
-/*
-div.featured-mktg-content:hover {
-  background-color: rgba(255, 248, 173, 0.5);
-  transition: all 1s;
-}
-div.featured-mktg-content:hover h2, div.featured-mktg-content:hover h3 {
-  color: rgb(47, 102, 144);
-  text-shadow: 0 0 2px white;
-}
-*/
 .featured-mktg-box-1 {
   background-image: url("../images/for-sale-rancho-cucamonga-real-estate.jpeg");
   background-position: center;
