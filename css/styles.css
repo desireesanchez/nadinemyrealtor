@@ -645,6 +645,7 @@ div.customer-impact-content img {
 .back {
   transform: rotateY(180deg);
   width: -webkit-fill-available;
+  background-image: none;
 }
 
 /* END entire flip container for featured boxes, keeps perspective */
